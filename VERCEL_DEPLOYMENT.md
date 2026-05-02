@@ -14,7 +14,7 @@ dist/
 build/
 ```
 
-### B. Create `vercel.json`
+### B. Create `vercel.json` 
 This file is already provided in your project root.
 
 ### C. Initialize Git (if not done)
