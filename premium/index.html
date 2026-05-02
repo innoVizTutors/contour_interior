@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contours Interio Pvt. Ltd. — Luxury Interior Design, Pune</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="../config-loader.js"></script>
+  <script src="../dom-populator.js"></script>
+</head>
+<body>
+  <div id="toastMessage" class="toast-message" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Loading screen -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">Contours Interio</div>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+    <div class="loader-count" id="loaderCount">0</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-c">Contours</span>
+      <span class="logo-sep"></span>
+      <span class="logo-i">Interio</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-text="About">About</a></li>
+      <li><a href="#services" data-text="Services">Services</a></li>
+      <li><a href="#projects" data-text="Projects">Projects</a></li>
+      <li><a href="#process" data-text="Process">Process</a></li>
+      <li><a href="#contact" data-text="Contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:+919356704250" class="nav-phone">+91 93567 04250</a>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-diagonal" aria-hidden="true"></div>
+    <div class="hero-body">
+      <div class="hero-label reveal-up">Est. 2010 &nbsp;·&nbsp; Pune, India &nbsp;·&nbsp; 30+ Years</div>
+      <h1 class="reveal-up" style="animation-delay:0.15s">
+        <span class="h1-line">Spaces That</span>
+        <span class="h1-line italic" style="animation-delay:0.25s"><em>Tell Your Story</em></span>
+      </h1>
+      <p class="hero-lead reveal-up" style="animation-delay:0.35s">From blueprint to brilliance — Contours Interio crafts residential and commercial environments blending heritage with modern innovation, tailored to reflect your unique personality.</p>
+      <div class="hero-actions reveal-up" style="animation-delay:0.45s">
+        <a href="#projects" class="btn-gold">View Our Work</a>
+        <a href="#contact" class="btn-ghost">Get a Free Quote</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="hero-blueprint reveal-right">
+        <img src="/assets/images/7.jpg" alt="Interior design blueprint">
+      </div>
+      <div class="hero-stats-float reveal-right" style="animation-delay:0.2s">
+        <div class="hsf-item"><span class="hsf-n">200<sup>+</sup></span><span class="hsf-l">Projects</span></div>
+        <div class="hsf-sep"></div>
+        <div class="hsf-item"><span class="hsf-n">30<sup>+</sup></span><span class="hsf-l">Years</span></div>
+        <div class="hsf-sep"></div>
+        <div class="hsf-item"><span class="hsf-n">4.5<sup>★</sup></span><span class="hsf-l">Rating</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-visual fade-up">
+      <div class="av-frame">
+        <div class="av-inner">
+          <img src="/assets/images/8.jpg" alt="Interior design showcase">
+        </div>
+        <div class="av-badge">
+          <span class="av-num">30<sup>+</sup></span>
+          <span class="av-txt">Years of<br>Excellence</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-text fade-up" style="animation-delay:0.15s">
+      <span class="eyebrow">Our Foundation</span>
+      <h2>A Legacy Built on<br><em>Three Generations</em></h2>
+      <div class="gold-rule"></div>
+      <p>Our contracting firm was founded by Mr. Parag Edwankar, B.E. (Civil), who carries forward a rich legacy of construction and architecture ingrained in his family. Guided by this heritage, Contours Interio carries the belief that the spaces we inhabit shape our experiences, influence our emotions and tell our stories.</p>
+      <p>With over 3 decades of experience, whether it's creating elegant residential spaces or sophisticated commercial environments — we blend traditional expertise with modern innovation to craft environments that reflect the unique personalities of those who occupy them.</p>
+      <div class="about-features">
+        <div class="af"><span class="af-dot"></span>Turnkey Interior Contracts</div>
+        <div class="af"><span class="af-dot"></span>Civil, Electrical &amp; Plumbing</div>
+        <div class="af"><span class="af-dot"></span>Material Test Reports on Every Project</div>
+        <div class="af"><span class="af-dot"></span>As-Built Drawings at Handover</div>
+        <div class="af"><span class="af-dot"></span>Post-Handover Aftercare &amp; Support</div>
+      </div>
+      <div class="founder-card">
+        <div class="fc-avatar">PE</div>
+        <div class="fc-info">
+          <strong>Mr. Parag Edwankar, B.E. (Civil)</strong>
+          <span>Founder &amp; Director · Contours Interio Pvt. Ltd.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="services-bg-text" aria-hidden="true">Services</div>
+    <div class="services-header fade-up">
+      <span class="eyebrow light">What We Do</span>
+      <h2>Comprehensive<br><em>Interior Solutions</em></h2>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card fade-up"><div class="svc-n">01</div><h3>Residential Interiors</h3><p>Complete home transformation — living rooms, bedrooms, kitchens, and modular storage designed around how you live and who you are.</p><div class="svc-arrow">&#8599;</div></div>
+      <div class="svc-card fade-up" style="animation-delay:0.1s"><div class="svc-n">02</div><h3>Commercial Spaces</h3><p>Offices, clinics, retail and hospitality spaces designed to impress clients and inspire your team every single day.</p><div class="svc-arrow">&#8599;</div></div>
+      <div class="svc-card fade-up" style="animation-delay:0.2s"><div class="svc-n">03</div><h3>Turnkey Contracts</h3><p>Civil, electrical, carpentry, painting, plumbing — total accountability from concept to handover under one roof.</p><div class="svc-arrow">&#8599;</div></div>
+      <div class="svc-card fade-up" style="animation-delay:0.1s"><div class="svc-n">04</div><h3>Modular Solutions</h3><p>Premium modular kitchens, wardrobes, TV units, and storage crafted for timeless aesthetics and long-term durability.</p><div class="svc-arrow">&#8599;</div></div>
+      <div class="svc-card fade-up" style="animation-delay:0.2s"><div class="svc-n">05</div><h3>Specialised Plumbing</h3><p>High-end bathroom and kitchen plumbing — precision-fitted with quality-assured materials and test reports on every project.</p><div class="svc-arrow">&#8599;</div></div>
+      <div class="svc-card fade-up" style="animation-delay:0.3s"><div class="svc-n">06</div><h3>Aftercare &amp; Support</h3><p>Post-handover support, as-built drawings, and ongoing maintenance. Our relationship with you continues beyond project completion.</p><div class="svc-arrow">&#8599;</div></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="projects-header fade-up">
+      <span class="eyebrow">Selected Work</span>
+      <h2>Our <em>Portfolio</em></h2>
+      <a href="#contact" class="btn-ghost sm">Discuss Your Project &#8594;</a>
+    </div>
+    <div class="proj-grid">
+      <div class="pj pj-tall fade-up"><img src="/assets/images/2.jpg" alt="Anand Gangoli Residence - Residential interior design" class="pj-img" loading="lazy"><div class="pj-overlay"></div><div class="pj-info"><span class="pj-cat">Residential · Pune</span><span class="pj-name">Anand Gangoli<br>Residence</span></div></div>
+      <div class="pj fade-up" style="animation-delay:0.1s"><img src="/assets/images/3.jpg" alt="ClearSkin Clinic - Commercial interior design" class="pj-img" loading="lazy"><div class="pj-overlay"></div><div class="pj-info"><span class="pj-cat">Commercial · Pune</span><span class="pj-name">ClearSkin Clinic</span></div></div>
+      <div class="pj fade-up" style="animation-delay:0.2s"><img src="/assets/images/4.jpg" alt="Rakesh Shah Residence - Residential interior design" class="pj-img" loading="lazy"><div class="pj-overlay"></div><div class="pj-info"><span class="pj-cat">Residential · Pune</span><span class="pj-name">Rakesh Shah Residence</span></div></div>
+      <div class="pj fade-up" style="animation-delay:0.1s"><img src="/assets/images/9.jpg" alt="ABIL House - Residential interior design" class="pj-img" loading="lazy"><div class="pj-overlay"></div><div class="pj-info"><span class="pj-cat">Residential · Pune</span><span class="pj-name">ABIL House</span></div></div>
+      <div class="pj fade-up" style="animation-delay:0.2s"><img src="/assets/images/5.jpg" alt="Loknete Desai Statue - Landmark project" class="pj-img" loading="lazy"><div class="pj-overlay"></div><div class="pj-info"><span class="pj-cat">Landmark · Islampur</span><span class="pj-name">Loknete Desai Statue</span></div></div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="process">
+    <div class="process-intro fade-up">
+      <span class="eyebrow light">How We Work</span>
+      <h2>Our <em>Process</em></h2>
+      <p>Structured. Transparent. Delivered on time — every time.</p>
+    </div>
+    <div class="process-timeline">
+      <div class="pt-step fade-up"><div class="pt-num">01</div><div class="pt-body"><h3>Discovery</h3><p>In-depth consultations to understand your vision, lifestyle, and budget before a single sketch is drawn.</p></div></div>
+      <div class="pt-step fade-up" style="animation-delay:0.12s"><div class="pt-num">02</div><div class="pt-body"><h3>Design &amp; Planning</h3><p>Detailed concepts, floor plans, and material palettes aligned with your aesthetic and functional goals.</p></div></div>
+      <div class="pt-step fade-up" style="animation-delay:0.24s"><div class="pt-num">03</div><div class="pt-body"><h3>Execution</h3><p>Turnkey delivery across civil, carpentry, electrical, painting, and plumbing — all under one roof.</p></div></div>
+      <div class="pt-step fade-up" style="animation-delay:0.36s"><div class="pt-num">04</div><div class="pt-body"><h3>Handover &amp; Support</h3><p>As-built drawings, material test reports, complete walkthrough, and ongoing aftercare included.</p></div></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="t-header fade-up">
+      <span class="eyebrow">Client Voices</span>
+      <h2>What Our <em>Clients Say</em></h2>
+    </div>
+    <div class="t-grid">
+      <div class="t-card fade-up">
+        <div class="t-quote">&ldquo;</div>
+        <p>Contours Interio transformed our clinic into a space that puts patients at ease. Their attention to detail and commitment to quality is unmatched. The team handled everything without a single delay.</p>
+        <div class="t-attr"><div class="t-line"></div><div><strong>Dr. Dhananjay Chavan</strong><span>Managing Director, ClearSkin — Pune</span></div></div>
+      </div>
+      <div class="t-card fade-up" style="animation-delay:0.12s">
+        <div class="t-quote">&ldquo;</div>
+        <p>They understood exactly what we envisioned and delivered beyond our expectations. The collaborative process made all the difference from day one.</p>
+        <div class="t-attr"><div class="t-line"></div><div><strong>Mr. Avinash Bhosale</strong><span>Abbey Palace, Baner — Pune</span></div></div>
+      </div>
+      <div class="t-card fade-up" style="animation-delay:0.24s">
+        <div class="t-quote">&ldquo;</div>
+        <p>Material test reports, as-built drawings, post-handover support — rare differentiators showing they truly care about long-term quality.</p>
+        <div class="t-attr"><div class="t-line"></div><div><strong>Mr. D. B. Gupta</strong><span>Chairman, Lupin Pharma — Pune</span></div></div>
+      </div>
+      <div class="t-card fade-up" style="animation-delay:0.36s">
+        <div class="t-quote">&ldquo;</div>
+        <p>From our bungalow in Nashik to coordinating with architects in Mumbai — Contours managed every aspect professionally. Our home truly reflects us.</p>
+        <div class="t-attr"><div class="t-line"></div><div><strong>Mr. Sanjay Arora</strong><span>CMD, D'Décor — Juhu, Mumbai</span></div></div>
+      </div>
+    </div>
+    <div class="clients-marquee fade-up">
+      <div class="cm-label">Trusted by distinguished clients across India</div>
+      <div class="cm-row">
+        <span>ClearSkin Clinics</span><span>Lupin Pharma</span><span>Deepak Fertilizers</span>
+        <span>ABIL Group</span><span>D'Décor</span><span>Ashoka Buildcon</span>
+        <span>Pidilite Ltd.</span><span>Woodside Inn</span><span>B.U. Bhandari</span>
+        <span>Spectral Services</span><span>Urjal Consultants</span><span>Mcline</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-left fade-up">
+      <span class="eyebrow light">Get In Touch</span>
+      <h2>Let's Design<br><em>Your Space</em></h2>
+      <p>Share your vision and we'll respond within 24 hours.</p>
+      <div class="c-info">
+        <div class="ci"><span class="ci-l">Address</span><span>Shirine Garden, D-1 Bldg, D-6–2nd Floor,<br>Opp ITI, Parihar Chowk, Aundh, Pune – 411 007</span></div>
+        <div class="ci"><span class="ci-l">Phone</span><span><a href="tel:+919356704250">+91 93567 04250</a></span></div>
+        <div class="ci"><span class="ci-l">Email</span><span><a href="mailto:info@contoursinterio.com">info@contoursinterio.com</a></span></div>
+        <div class="ci"><span class="ci-l">Web</span><span><a href="https://contoursinterio.com" target="_blank">contoursinterio.com</a></span></div>
+      </div>
+    </div>
+    <form class="contact-form fade-up" id="contactForm" style="animation-delay:0.15s" data-page="premium">
+      <input type="hidden" name="source" value="premium">
+      <div class="cf-title">Send an Enquiry</div>
+      <div class="form-row">
+        <div class="fg"><label>Full Name</label><input type="text" name="name" placeholder="Your name" required></div>
+        <div class="fg"><label>Mobile</label><input type="tel" name="mobile" placeholder="+91 XXXXX XXXXX"></div>
+      </div>
+      <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="you@example.com"></div>
+      <div class="form-row">
+        <div class="fg"><label>Requirement</label>
+          <select name="requirement"><option value="">Select...</option><option>Full Home Interior</option><option>Modular Kitchen</option><option>Modular Wardrobe</option><option>Commercial Interior</option><option>Turnkey Contract</option><option>Other</option></select></div>
+        <div class="fg"><label>Budget Range</label>
+          <select name="budget"><option value="">Select...</option><option>₹10L – ₹15L</option><option>₹15L – ₹20L</option><option>₹20L+</option></select></div>
+      </div>
+      <div class="fg"><label>Message</label><textarea name="message" placeholder="Tell us about your project..."></textarea></div>
+      <button type="submit" class="btn-submit">Submit Enquiry</button>
+      <p class="form-success" id="formSuccess">Thank you! We'll be in touch within 24 hours.</p>
+    </form>
+  </section>
+
+  <!-- Map -->
+  <section class="map-section">
+    <h2 class="map-title">Visit Our <em>Studio</em> in Pune</h2>
+    <div class="map-container fade-up">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8285574474266!2d73.80215!3d18.540835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b97d5c5a5c5d%3A0x5c5c5c5c5c5c5c5c!2sContours%20Interio%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <a href="#home" class="f-logo">Contours Interio Pvt. Ltd.</a>
+        <div class="f-addr">B-704, Element-5, Rahatani, Pune – 411 017 &nbsp;|&nbsp; +91 93567 04250</div>
+      </div>
+      <div class="f-copy">© 2024 Contours Interio Pvt. Ltd. All rights reserved.</div>
+      <nav class="f-nav">
+        <a href="#about">About</a><a href="#services">Services</a>
+        <a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
